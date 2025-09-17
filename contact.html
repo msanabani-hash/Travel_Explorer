@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel_Explorer </title>
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div class="page-overlay"></div>
+       <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+            <i class="fa-solid fa-plane-departure"></i>Travel Explorer</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu" class="menu">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="packages.html">Package</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+      <main>
+    <section class="container page-hero">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you. Send us a message and we’ll reply shortly.</p>
+    </section>
+        <section class="container contact-layout">
+      <!-- معلومات التواصل -->
+      <aside class="contact-info">
+        <div class="info-card glass">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>info@travelexplorer.com</p>
+        </div>
+        <div class="info-card glass">
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p>+967 771 968 238</p>
+        </div>
+        <div class="info-card glass">
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Location</h3>
+          <p>Yemen, sana'a, Aser</p>
+        </div>
+
+        <!-- مكان للخريطة -->
+        <div class="map-box glass">
+          <div class="map-placeholder">
+            <i class="fa-solid fa-map"></i>
+            <span>Map placeholder</span>
+          </div>
+        </div>
+      </aside>
+            <!-- نموذج التواصل -->
+      <section class="contact-form glass">
+        <h2>Send a Message</h2>
+
+        <!-- رسائل التنبيه -->
+        <div id="formSuccess" class="form-alert success" hidden>
+          <i class="fa-solid fa-circle-check"></i> Your message has been sent. Thank you!
+        </div>
+        <div id="formError" class="form-alert error" hidden>
+          <i class="fa-solid fa-triangle-exclamation"></i> Please fix the errors below and try again.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="name">Full Name <span>*</span></label>
+              <input id="name" type="text" placeholder="Your full name" required />
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address <span>*</span></label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" type="tel" placeholder="+967" />
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject <span>*</span></label>
+              <input id="subject" type="text" placeholder="Message subject" required />
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="field field-full">
+              <label for="message">Message <span>*</span></label>
+              <textarea id="message" rows="6" placeholder="Write your message..." required></textarea>
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="field field-full agree">
+              <label class="checkbox">
+                <input id="agree" type="checkbox" required />
+                <span>I agree to be contacted back.</span>
+              </label>
+              <small class="error-msg"></small>
+            </div>
+
+            <div class="actions field-full">
+              <button type="submit" class="btn btn-book">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+  </main>
+
+
+    <footer class="site-footer">
+                <div class="container footer-row">
+                    <small>
+                        <span id="year"></span>
+                        Travel Explorer . All rights reserved
+                    </small>
+                    <div class="social">
+                        <a href="mailto:info@travelexplorer.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="#" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="#" aria-label="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsApp" target="_blank" aria-label="whatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                     </div>
+                </div>
+            </footer>
+            <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="./js/app.js"></script>
+        </body>
+</html>

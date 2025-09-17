@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Travel_Explorer</title>
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div class="page-overlay"></div>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+            <i class="fa-solid fa-plane-departure"></i>Travel Explorer</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu" class="menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destination</a></li>
+                <li><a href="packages.html">Package</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero container">
+            <h1>Welcome to Travel Explorer</h1>
+            <P>Plan your  perfect trip and discover the world's most beautiful.</P>
+            <div class="cta-row">
+                <a class="btn primary" href="destinations.html">Explorer Destination</a>
+                <a class="btn ghost" href="packages.html">View Packages</a>
+            </div>
+        </section>
+       
+<div class="te-slider" id="heroSlider">
+  <div class="te-track">
+    <div class="te-item"><img src="./images/parisPhoto.jpeg"  alt="Paris"></div>
+    <div class="te-item"><img src="./images/baliPhoto.jpeg" alt="Bali"></div>
+    <div class="te-item"><img src="./images/TokyoPhoto.jpeg" alt="Tokyo"></div>
+    <div class="te-item"><img src="./images/maldivesPhoto.jpeg" alt="Maldives"></div>
+    <div class="te-item"><img src="./images/dubiPhoto.jpeg" alt="Dubai"></div>
+  </div>
+
+  <button class="te-nav te-prev" aria-label="Previous">‹</button>
+  <button class="te-nav te-next" aria-label="Next">›</button>
+</div>
+<!-- ===== /Slider ===== -->
+
+        <section class="container popular">
+             <div class="section-head">
+                        <h2>Popular Destination</h2>
+                        <a class="link glass-btn" href="destinations.html">See all</a>
+                    </div>
+                    <div class="grid-4">
+                        <article class="card">
+                            <img src="./images/paris.jpeg"   alt="eiffel tower in paris">
+                            <div class="card-body">
+                                <h3>Paris</h3>
+                                <p>City of lights, art, and cafes.</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/bali.jpeg"  alt="Tropical beach in Bali">
+                            <div class="card-body">
+                                <h3>Bali</h3>
+                                <p>Relaxing Tropical vibes and beaches.</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/tokyo.jpeg"  alt="tokyo skyline at dusk">
+                            <div class="card-body">
+                                <h3>Tokyo</h3>
+                                <p>modern city with rich culture.</p>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./images/maldives.jpeg" alt="crystal water in maldives">
+                            <div class="card-body">
+                                <h3>Maldives</h3>
+                                <p>Dreamy island with turquoise water.</p>
+                            </div>
+                        </article>
+                    </div>
+            </section>
+            <!-- why choose us -->
+             <section class="container feature">
+                <h2>Why choose us?</h2>
+                <div class="grid-3">
+                    <div class="feature">
+                        <i class="fa-solid fa-shield-halved "></i>
+                        <h3>Secure Bookings</h3>
+                        <p>Simple steps with trusted providers.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-tags"></i>
+                        <h3>Competitive price</h3>
+                        <p>Flexible packages for all budgets.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>24/7 support</h3>
+                        <p>We're here for you anytime.</p>
+                    </div>
+                </div>
+             </section>
+            </main>
+            <footer class="site-footer">
+                <div class="container footer-row">
+                    <small>
+                        <span id="year"></span>
+                        Travel Explorer . All rights reserved
+                    </small>
+                    <div class="social">
+                        <a href="mailto:info@travelexplorer.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="#" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="#" aria-label="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsApp" target="_blank" aria-label="whatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                     </div>
+                </div>
+            </footer>
+            <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="./js/app.js"></script>
+        </body>
+</html>

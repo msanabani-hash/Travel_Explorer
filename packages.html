@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages-Travel_Explorer</title>
+    <meta name="description" content="Discover top destination and travel package with travel Explorer.">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div class="page-overlay"></div>
+      <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+            <i class="fa-solid fa-plane-departure"></i>Travel Explorer</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a class="active" href="packages.html">Packages</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+
+            </ul>
+        </nav>
+    </header>
+      <main>
+    <section class="container page-hero">
+      <h1>Travel Packages</h1>
+      <p>Choose from our curated packages that include flights, stays, and guided tours.</p>
+    </section>
+                 
+        <!-- Packages using Bootstrap (GLASS + WHITE BOOK BUTTON) -->
+<div class="container my-5">
+  <div class="row g-4">
+    
+    <!-- Paris -->
+    <div class="col-md-4">
+      <div class="card glass h-100 rounded-4 shadow-sm border-0">
+        <img src="./images/paris3.jpeg" class="card-img-top" alt="Paris">
+        <div class="card-body">
+          <h5 class="card-title">Romantic Paris Getaway</h5>
+          <p class="card-text">5 nights in 4-star hotel, breakfast included, Eiffel Tower tour.</p>
+          <ul class="list-unstyled small">
+            <li><i class="fa-solid fa-plane"></i> Flight included</li>
+            <li><i class="fa-solid fa-hotel"></i> Accommodation</li>
+            <li><i class="fa-solid fa-bread-slice"></i> Breakfast</li>
+          </ul>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold text-pink">$899</span>
+            <!-- زر الحجز الأبيض + تمرير اسم الباكج للمودال -->
+            <a href="#" class="btn btn-sm btn-book"
+               data-bs-toggle="modal" data-bs-target="#bookModal"
+               data-package="Romantic Paris Getaway">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bali -->
+    <div class="col-md-4">
+      <div class="card glass h-100 rounded-4 shadow-sm border-0">
+        <img src="./images/bali3.jpeg" class="card-img-top" alt="Bali">
+        <div class="card-body">
+          <h5 class="card-title">Bali Adventure</h5>
+          <p class="card-text">7 nights villa stay, island tours, beach activities.</p>
+          <ul class="list-unstyled small">
+            <li><i class="fa-solid fa-plane"></i> Flight included</li>
+            <li><i class="fa-solid fa-umbrella-beach"></i> Island tours</li>
+            <li><i class="fa-solid fa-spa"></i> Spa session</li>
+          </ul>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold text-pink">$1199</span>
+            <a href="#" class="btn btn-sm btn-book"
+               data-bs-toggle="modal" data-bs-target="#bookModal"
+               data-package="Bali Adventure">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tokyo -->
+    <div class="col-md-4">
+      <div class="card glass h-100 rounded-4 shadow-sm border-0">
+        <img src="./images/tokyo3.jpeg" class="card-img-top" alt="Tokyo">
+        <div class="card-body">
+          <h5 class="card-title">Tokyo Explorer</h5>
+          <p class="card-text">6 nights in Shinjuku, guided city tours, sushi experience.</p>
+          <ul class="list-unstyled small">
+            <li><i class="fa-solid fa-plane"></i> Flight included</li>
+            <li><i class="fa-solid fa-bus"></i> City tours</li>
+            <li><i class="fa-solid fa-utensils"></i> Traditional meals</li>
+          </ul>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="fw-bold text-pink">$1350</span>
+            <a href="#" class="btn btn-sm btn-book"
+               data-bs-toggle="modal" data-bs-target="#bookModal"
+               data-package="Tokyo Explorer">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </main>
+
+             <footer class="site-footer">
+                <div class="container footer-row">
+                    <small>
+                        <span id="year"></span>
+                        Travel Explorer . All rights reserved
+                    </small>
+                    <div class="social">
+                        <a href="mailto:info@travelexplorer.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="#" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="#" aria-label="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsApp" target="_blank" aria-label="whatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                     </div>
+                </div>
+            </footer>
+                <!-- Booking Modal -->
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content glass">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bookTitle">Book Your Package</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="bookForm">
+            <div class="mb-3">
+              <label for="pkg" class="form-label">Selected Package</label>
+              <input type="text" class="form-control" id="pkg" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-book w-100">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+            <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="./js/app.js"></script>
+</body>
+</html>

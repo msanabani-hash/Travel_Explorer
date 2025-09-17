@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations-Travel_Explorer</title>
+    <meta name="description" content="Discover top destination and travel package with travel Explorer.">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+    <div class="page-overlay"></div>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+            <i class="fa-solid fa-plane-departure"></i>Travel Explorer</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="menu" class="menu">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a class="active" href="destinations.html">Destinations</a></li>
+                   <li><a href="packages.html">Packages</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="login.html">Login</a></li>
+                   <li><a href="register.html">Register</a></li>
+
+            </ul>
+        </nav>
+    </header>
+         <main>
+    <section class="container page-hero">
+      <h1>Top Destinations</h1>
+      <p>Find your next gateway — filter by region, budget, and duration.</p>
+    </section>
+                <!-- Filters + Grid -->
+    <section class="container dest-layout">
+      <!-- Filters (left) -->
+      <aside class="filters glass">
+        <h2><i class="fa-solid fa-sliders"></i> Filters</h2>
+
+        <label class="filter-item">
+          <span>Region</span>
+          <select id="f-region">
+            <option value="all">All</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="middle-east">Middle East</option>
+            <option value="islands">Islands</option>
+          </select>
+        </label>
+
+        <label class="filter-item">
+          <span>Max Price (USD)</span>
+          <input id="f-price" type="range" min="300" max="1500" step="100" value="1500" />
+          <small id="priceValue">Up to $1500</small>
+        </label>
+
+        <div class="filter-item">
+          <span>Duration</span>
+          <div class="chips">
+            <button class="chip active" data-duration="any">Any</button>
+            <button class="chip" data-duration="short">3–5 days</button>
+            <button class="chip" data-duration="week">6–8 days</button>
+          </div>
+        </div>
+
+        <button id="clearFilters" class="btn ghost w-100">Clear Filters</button>
+      </aside>
+
+      <!-- Grid (right) -->
+      <div class="dest-grid" id="destGrid">
+        <!-- Card -->
+        <article class="dest-card" data-region="europe" data-price="499" data-duration="short">
+          <img src="./images/paris2.jpeg" alt="Paris">
+          <div class="dest-body">
+            <h3>Paris</h3>
+            <p>City of lights, art, and cafés.</p>
+            <div class="meta">
+              <span><i class="fa-solid fa-tag"></i> $499</span>
+              <span><i class="fa-solid fa-clock"></i> 5 days</span>
+              <span><i class="fa-solid fa-globe"></i> Europe</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-region="islands" data-price="699" data-duration="week">
+          <img src="./images/bali2.jpeg" alt="Bali">
+          <div class="dest-body">
+            <h3>Bali</h3>
+            <p>Relaxing tropical vibes and beaches.</p>
+            <div class="meta">
+              <span><i class="fa-solid fa-tag"></i> $699</span>
+              <span><i class="fa-solid fa-clock"></i> 7 days</span>
+              <span><i class="fa-solid fa-globe"></i> Islands</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-region="asia" data-price="799" data-duration="week">
+          <img src="./images/tokyo2.jpeg" alt="Tokyo">
+          <div class="dest-body">
+            <h3>Tokyo</h3>
+            <p>Modern city with rich culture.</p>
+            <div class="meta">
+              <span><i class="fa-solid fa-tag"></i> $799</span>
+              <span><i class="fa-solid fa-clock"></i> 6 days</span>
+              <span><i class="fa-solid fa-globe"></i> Asia</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-region="islands" data-price="999" data-duration="short">
+          <img src="./images/maldives2.jpeg" alt="Maldives">
+          <div class="dest-body">
+            <h3>Maldives</h3>
+            <p>Dreamy islands with turquoise water.</p>
+            <div class="meta">
+              <span><i class="fa-solid fa-tag"></i> $999</span>
+              <span><i class="fa-solid fa-clock"></i> 5 days</span>
+              <span><i class="fa-solid fa-globe"></i> Islands</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card" data-region="middle-east" data-price="650" data-duration="short">
+          <img src="./images/dubi2.jpeg" alt="Dubai">
+          <div class="dest-body">
+            <h3>Dubai</h3>
+            <p>Desert adventures and skyline views.</p>
+            <div class="meta">
+              <span><i class="fa-solid fa-tag"></i> $650</span>
+              <span><i class="fa-solid fa-clock"></i> 4 days</span>
+              <span><i class="fa-solid fa-globe"></i> Middle East</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+                <div class="container footer-row">
+                    <small>
+                        <span id="year"></span>
+                        Travel Explorer . All rights reserved
+                    </small>
+                    <div class="social">
+                        <a href="mailto:info@travelexplorer.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="#" aria-label="Phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <a href="#" aria-label="Location">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://whatsApp" target="_blank" aria-label="whatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                     </div>
+                </div>
+            </footer>
+            <script src="./js/app.js"></script>
+</body>
+</html>
